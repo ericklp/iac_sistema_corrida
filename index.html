@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>UFPR - Corrida</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+
+    <script src="../../dist/js/jquery-3.1.1.js"></script>
+    <script src="../../dist/js/ie-emulation-modes-warning.js"></script>
+    <script src="login.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <form class="form-signin">
+        <img src="../../dist/icons/logo_ufpr_2.png" alt="logoUfpr" style="width:304px;height:228px;">
+        <h3 class="form-signin-heading">Login Sistema de Corridas:</h3>
+        <label for="input" class="sr-only">Login</label>
+        <input type="email" id="input" class="form-control" placeholder="Login" required autofocus>
+        <label for="inputPassword" class="sr-only">Senha</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Gravar dados
+          </label>
+        </div>
+        <div class="alert alert-danger" id='alerta' hidden='true'>
+          <strong id='mensagem'>Usuário ou senha incorretos</strong>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="login()">Login</button>
+        <button class="btn btn-lg btn-primary btn-block btn-success" onclick="window.location.assign('cadastro.html')">Cadastrar</button>
+      </form>
+    </div> <!-- /container -->
+
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

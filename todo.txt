@@ -1,0 +1,19 @@
+INSERTS, NEED TO CHECK, 
+
+INSERT INTO modalidade (modalidade,pacote_idpacote) VALUE('MASCULINO 10KM','001');
+
+INSERT INTO camiseta (idcamiseta,modelo,tamanho) VALUES('004','MASCULINO','G');
+
+INSERT INTO camiseta (idcamiseta,modelo,tamanho) VALUES('005','MASCULINO','GG');
+
+
+INSERT INTO pacote (pacote,preco,descricao,camiseta_idcamiseta) VALUES('KIT1','180','VIP','001');
+
+INSERT INTO modalidade (modalidade,pacote_idpacote) VALUE('MASCULINO 10KM','0');
+
+INSERT INTO relatorio (idrelatorio) VALUE(0);
+
+INSERT INTO classificacao (classificacao,categoria,relatorio_idrelatorio) VALUES('99','MASCULINO 10KM',0);
+
+INSERT INTO candidato (nomeCompleto,rg,cpf,email,senha,sexo,telefone,passaporte,classificacao_idclassificacao) VALUE('Erick Alexandre Lopes','X-XXX-XXX-X','X-XXX-XXX.X','ericklp@gmail.com', '1234', 'masculino','(41)9999-8888','123432',0);
+
